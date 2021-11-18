@@ -411,7 +411,8 @@ body {
     .produ6,
     .produ7,
     .produ8 {
-        padding: 20px 20px;
+        margin: 0 20px;
+        padding: 40px 20px;
     }
 
     /*fin de productos*/
