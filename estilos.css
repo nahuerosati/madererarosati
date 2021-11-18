@@ -425,12 +425,18 @@ body {
     }
 
     #nosotros h1{
+        margin: 15px 0 0 0;
         text-align: center;
+    }
+
+    #nosotros h2{
+        margin: 0;
+        padding: 15px 0;
     }
 
     #nosotros p{
         margin: auto;
-        padding: 20px 180px 40px 180px;
+        padding: 10px 180px 40px 180px;
     }
 
 
