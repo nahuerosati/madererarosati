@@ -416,6 +416,25 @@ body {
 
     /*fin de productos*/
 
+    /*inicio nosotros*/
+
+    #nosotros{
+        display: grid;
+        justify-content: center;
+    }
+
+    #nosotros h1{
+        text-align: center;
+    }
+
+    #nosotros p{
+        margin: auto;
+        padding: 20px 180px 40px 180px;
+    }
+
+
+    /*fin nosotros*/
+
 /*inicio footer*/
 
     footer {
