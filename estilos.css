@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f970;
+}
+
+@media only screen and (max-width:768px) {
+
+    /* empieza nav-bar */
+
+    header {
+        width: 100%;
+        background-color: goldenrod;
+        display: block;
+    }
+
+    /*PRUEBA GRID*/
+
+    nav {
+        display: grid;
+        grid-template-areas: "a"
+            "titulo"
+            "menuIconos";
+    }
+
+    nav a {
+        margin: auto;
+        justify-content: center;
+        padding: 1rem;
+        color: white;
+    }
+
+    .titulo {
+        margin: auto;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: overline;
+        letter-spacing: 4px;
+    }
+
+    ul {
+        display: inline-block;
+
+    }
+
+    nav ul li {
+        display: flex;
+        align-content: flex-start;
+        justify-content: center;
+    }
+
+    ul ul {
+        position: absolute;
+        display: none;
+        color: white;
+    }
+
+    ul li:hover ul {
+        display: block;
+
+    }
+
+    ul ul li {
+        background-color: gold;
+    }
+
+    ul ul li a {
+        display: block;
+        color: black;
+        letter-spacing: 1px;
+    }
+
+    nav a:hover {
+        color: yellow;
+    }
+
+
+
+    /* termina nav-bar */
+
+
+
+    /*medios de pago*/
+
+    .MediosDePago {
+        display: grid;
+        justify-content: space-around;
+        width: 40%;
+        height: auto;
+        margin: auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+
+    .mdp {
+        font-size: 26px;
+        color: brown;
+        text-align: center;
+        margin: 50px 0 15px 0;
+    }
+
+    .TotalMDP {
+        width: 100%;
+        display: grid;
+        align-content: center;
+    }
+
+    .pago img {
+        display: grid;
+        justify-content: center;
+        margin-left: 6px;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .pago {
+        width: auto;
+    }
+
+    .MediosDePago .pago h3 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+
+    /*fin medios de pago*/
+
+
+
+}
+
+
+
+
+@media only screen and (min-width:1024px) {
+
+
+    /* empieza nav-bar */
+
+    header {
+        width: 100%;
+        background-color: goldenrod;
+        position: fixed;
+
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0.3em;
+        color: white;
+        padding: 0 0 0 0;
+    }
+
+    .img-logo {
+        height: 70px;
+        width: 70px;
+        padding: 15px 0 0 15px;
+
+    }
+
+    .titulo {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: overline;
+        letter-spacing: 6px;
+        font-size: 1.6em;
+        margin: 0 0 10px 0;
+        padding: 0 0 10px 25px;
+    }
+
+    @keyframes aparecer {
+
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+
+    .menuIconos {
+        padding-left: 320px;
+        width: auto;
+    }
+
+    ul {
+        display: inline-block;
+
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+        margin: 8px;
+        border: 1px solid brown;
+        border-radius: 4px;
+        padding: 3px;
+    }
+
+    nav ul li:hover {
+        background-color: brown;
+    }
+
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+
+    ul li:hover ul {
+        display: block;
+
+    }
+
+    ul ul li {
+        background-color: gold;
+    }
+
+    ul ul li a {
+        display: block;
+        color: black;
+        letter-spacing: 1px;
+    }
+
+
+    nav a:hover {
+        color: yellow;
+    }
+
+
+    /* termina nav-bar */
+
+    /*medios de pago*/
+
+    .mdp {
+        font-size: 26px;
+        color: brown;
+        text-align: center;
+        margin: 50px 0 15px 0;
+    }
+
+    .MediosDePago {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+        height: 160px;
+        margin: auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+    .pago img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .pago {
+        height: 200px;
+        width: auto;
+    }
+
+    .MediosDePago .pago h3 {
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    .MediosDePago .pago img {
+        margin-left: 25px;
+    }
+
+    /*fin medios de pago*/
+
+    /*especies de maderas*/
+    .imgMaderas {
+
+        border: goldenrod solid 0.1px;
+        margin: 60px;
+        padding: 30px;
+    }
+
+    h1 {
+        margin: 20px;
+        padding: 20px;
+        letter-spacing: 0.3rem;
+        line-height: 20px;
+        font-size: 36px;
+    }
+
+
+    #maderas {
+        text-align: left;
+        line-height: 10px;
+    }
+
+
+    .imgPresentacion {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas: "fotosMaderas fotosMaderas fotosMaderas fotosMaderas"
+            "fotosMaderas fotosMaderas fotosMaderas fotosMaderas"
+            "fotosMaderas fotosMaderas fotosMaderas fotosMaderas"
+            "fotosMaderas fotosMaderas fotosMaderas fotosMaderas";
+        grid-column-gap: 2%;
+        justify-content: center;
+    }
+
+    .imgPresentacion section:hover {
+        transform: scale(1.1);
+        transition: transform 1s ease;
+        box-shadow: 2px 2px 10px black;
+    }
+
+
+    .fotosMaderas {
+        margin: 10px;
+    }
+
+    /* fin especies de maderas*/
+
+
+    h2 {
+        font-size: 26px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+        color: brown;
+        text-align: center;
+    }
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .tabla-maderas {
+        align-content: center;
+        color: brown;
+        padding: 5px;
+        margin: auto;
+    }
+
+    strong {
+        color: black;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+
+    .banner-tirantes {
+        padding: 100px 0 100px 0;
+        background: no-repeat center center fixed;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .video-pisos {
+        display: inline-block;
+        align-content: center;
+        margin-left: 390px;
+    }
+
+
+
+    .tiposDePisos {
+        font-size: 1.5em;
+        letter-spacing: .6px;
+        text-transform: uppercase;
+    }
+
+
+    /* inicio de productos*/
+
+    #productos {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imgProductos {
+        display: inline-block;
+    }
+
+    .produ1,
+    .produ2,
+    .produ3,
+    .produ4,
+    .produ5,
+    .produ6,
+    .produ7,
+    .produ8 {
+        padding: 20px 20px;
+    }
+
+    /*fin de productos*/
+
+/*inicio footer*/
+
+    footer {
+        display: grid;
+        justify-content: space-around;
+        background-color: goldenrod;
+    }
+
+    footer h1 {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+
+    footer ul li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    /*fin footer*/
+
+
+    /*pagina de contacto*/
+
+    #contacto{
+        display: grid;
+        justify-content:center;
+        margin-top: 3em;
+        padding-top: 3em;
+    }
+
+    #contacto .detalle-form{
+        display: inline-block;
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+    iframe{
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        padding: 70px 0 20px 0;
+    }
+
+
+
+    /* fin contacto*/
+
+
+}
